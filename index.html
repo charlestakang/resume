@@ -6,6 +6,15 @@
         <title>Charle's Resume</title>
     </head>
     <body>
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#history">Work History</a></li>
+                <li><a href="#portfolio">My Portfolio</a></li>
+                <li><a href="#address">Address</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
         <main>
         <h1>Resume</h1> 
         <section>
@@ -14,16 +23,17 @@
                 <h3>Coder, Hardware Tech, and Instructor</h3>
                 <dl>
                     <dt>Website:</dt>
-                    <dd>www.google.com</dd>
+                    <dd>
+                        <a href="https://www.google.com">Google</a>
+                    </dd>
 
                     <dt>Phone:</dt>
                     <dd>111-333-444</dd>
 
                     <dt>Twitter:</dt>
-                    <dd>@strongpickin</dd>
-
+                    <dd> <a href="https://twitter.com">My Twitter Handle</a> </dd>
                     <dt>Youtube Chanel:</dt>
-                    <dd>my youtube</dd>
+                    <dd> <a href="https://Youtube.com">My Youtube Channel</a> </dd>
                 </dl> 
             </p>
         </section>
@@ -36,7 +46,8 @@
             </p>
             <aside>
                 <p>
-                    Wheather you think you can or you think you cant, you are right.
+                    <small>Wheather you think you can or you think you cant, you are right.</small>
+                    
                 </p>
             </aside> 
             <footer>Authored by Charles</footer>
@@ -51,18 +62,18 @@
         </section>
 
         <!--Complete the sectioning of the page-->
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>
                     <p>
-                        Javascript
+                        <strong>Javascript</strong> 
                         Make you content more interactive, and build web applications
                     </p>
                 </li>
                 <li>
                     <p>
-                        HTML
+                        <b>HTML</b>
                         Markup your content with semantic HTML
                     </p>
                 </li>
@@ -74,7 +85,7 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="history">
             <h2>Work History</h2> 
             <table>
                 <thead>
@@ -91,7 +102,7 @@
                         <td>5</td>
                     </tr>
                     <tr>
-                        <td>Acme</td>
+                        <td> <a href="https://walmart.ca">Walmart</a></td>
                         <td>Hardware Design</td>
                         <td>3</td>
                     </tr>
@@ -109,20 +120,20 @@
                 </tfoot>
             </table>
         </section>
-        <section>
+        <section id="portfolio">
             <h2>Portfolio</h2>
             <!--Add images to portbrowserfolio later. Comments are ignored by the -->
         </section>
-        <section>
+        <section id="testimonials">
             <h2>Testimonials </h2>
             <blockquote>
-                <p>Cawaps courses gave me a change in my career.</p>
+                <p>Cawaps courses gave me a <i>change in my career.</i> </p>
             </blockquote>
             <blockquote>
-                <p>Cawap courses helped me get a job.</p>
+                <p>Cawap courses  <em> helped me get a job.</em></p>
             </blockquote>
         </section>
-        <section>
+        <section id="address">
             <h2>Mailing Address</h2>
             <address>
                 <p>
@@ -131,6 +142,7 @@
                 </p>
             </address>
         </section>
+        <a href="./contactme.html">Contact Me</a>
     </main>
     </body>    
 </html>
