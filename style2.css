@@ -1,0 +1,36 @@
+#container {
+    border:2px solid black;
+    margin-inline: auto;
+    margin-block: 0;
+}
+
+.child-div {
+    max-height: 200px;
+    max-width: clamp(500px, 700px, 900px);
+    margin-inline: auto;
+    margin-block: 0;
+
+}
+
+.one{
+    display: flex;
+    background-color: red;
+}
+h1{
+    flex-grow: 3;
+}
+.two{
+    background-color: green;
+}
+.three{
+    background-color: yellow;
+}
+.four{
+    background-color: green;
+}
+.five{
+    background-color: grey;
+}
+/* .six{
+    background-color: goldenrod;
+} */

@@ -3,11 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
         <title>Charle's Resume</title>
     </head>
     <body>
         <nav>
             <ul>
+
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#history">Work History</a></li>
                 <li><a href="#portfolio">My Portfolio</a></li>
@@ -19,7 +21,7 @@
         <h1>Resume</h1> 
         <section>
             <h2>Charles Takang</h2>
-            <p>
+            <p id="name">
                 <h3>Coder, Hardware Tech, and Instructor</h3>
                 <dl>
                     <dt>Website:</dt>
@@ -38,13 +40,14 @@
             </p>
         </section>
         <article>
-            <header>
+            <header class="flex-header">
                 <h2>About Me</h2>
             </header>
+            <img class="my-picture" src="./images/Imagememoji.png" alt="Emoji image of me">
             <p>
                 Hello! I'm Charles Takang and i'm happy to have you as a student in this course.
             </p>
-            <aside>
+            <aside class="motto" >
                 <p>
                     <small>Wheather you think you can or you think you cant, you are right.</small>
                     
@@ -54,11 +57,11 @@
         </article>
         <section>
             <h2>Services</h2>
-            <p>
-                Web development
-                App development
-                Training
-            </p>            
+                <ul>
+                    <li>Web development</li>
+                    <li>App development</li>
+                    <li>Training</li>
+                </ul>           
         </section>
 
         <!--Complete the sectioning of the page-->
@@ -99,7 +102,7 @@
                     <tr>
                         <td>ABC Corp</td>
                         <td>Backend Deveveloper</td>
-                        <td>5</td>
+                        lang  <td>5</td>
                     </tr>
                     <tr>
                         <td> <a href="https://walmart.ca">Walmart</a></td>
@@ -122,14 +125,26 @@
         </section>
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <!--Add images to portbrowserfolio later. Comments are ignored by the -->
+            <!-- add seven images from picsum or unspalsh or both. us img from your html specs. -->
+            <!--Add seven images from picsum or unspalsh website-->
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="snowy mountain peak with blue sky">
+            <img src="https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Dell laptop on a table">
+            <img src="https://picsum.photos/200/300?grayscale" alt="grayscale walruses">
+            <img src="https://picsum.photos/id/237/400/300" alt="Black puppy lloking up">
+            <img src="https://picsum.photos/id/238/200/300" alt="Black and white cityscape">
+            <img src="https://picsum.photos/id/58/200/300" alt="grayscaled light house">
+            <img src="https://picsum.photos/id/30/400/300" alt="brown cup">
+
         </section>
         <section id="testimonials">
-            <h2>Testimonials </h2>
-            <blockquote>
+            <h2 class="flex-header">Testimonials </h2>
+            <blockquote >
                 <p>Cawaps courses gave me a <i>change in my career.</i> </p>
             </blockquote>
             <blockquote>
+                <p>Cawap Lorem ipsum dolor sit amet.</p>
+            </blockquote>
+            <blockquote class="featured">
                 <p>Cawap courses  <em> helped me get a job.</em></p>
             </blockquote>
         </section>
@@ -137,12 +152,13 @@
             <h2>Mailing Address</h2>
             <address>
                 <p>
-                    999 Front st.
+                    999 Front st.<br/>
                     Anywhere, ON M6L 2C8
                 </p>
             </address>
         </section>
-        <a href="./contactme.html">Contact Me</a>
+        <a id="contact-me" href="./contactme.html">Contact Me</a>
     </main>
-    </body>    
+    
+    </body>  
 </html>
