@@ -4,6 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
         <title>Charle's Resume</title>
     </head>
     <body>
@@ -19,7 +23,7 @@
         </nav>
         <main>
         <h1>Resume</h1> 
-        <section>
+        <section class="animate__animated animate__fadeInUp">
             <h2>Charles Takang</h2>
             <p id="name">
                 <h3>Coder, Hardware Tech, and Instructor</h3>
@@ -33,13 +37,18 @@
                     <dd>111-333-444</dd>
 
                     <dt>Twitter:</dt>
-                    <dd> <a href="https://twitter.com">My Twitter Handle</a> </dd>
+
+
+                    <img class="social-logo" src="./images/icons8-twitter.svg" alt="">
+
+
+                    <dd> <img class="social-logo" src="./svg/icons8-twitter-512.svg" alt="Twitter logo"> <a href="https://twitter.com">My Twitter Handle</a> </dd>
                     <dt>Youtube Chanel:</dt>
-                    <dd> <a href="https://Youtube.com">My Youtube Channel</a> </dd>
+                    <dd> <img class="social-logo" src="./svg/icons8-youtube-240.svg" alt="Youtube"> <a href="https://Youtube.com">My Youtube Channel</a> </dd>
                 </dl> 
             </p>
         </section>
-        <article>
+        <article class="full-bleed">
             <header class="flex-header">
                 <h2>About Me</h2>
             </header>
@@ -53,7 +62,7 @@
                     
                 </p>
             </aside> 
-            <footer>Authored by Charles</footer>
+            <footer>  <a target="_blank" href="./contactme.html">Authored by Charles</a> </footer>
         </article>
         <section>
             <h2>Services</h2>
@@ -128,8 +137,8 @@
             <!-- add seven images from picsum or unspalsh or both. us img from your html specs. -->
             <!--Add seven images from picsum or unspalsh website-->
             <img src="https://picsum.photos/seed/picsum/200/300" alt="snowy mountain peak with blue sky">
-            <img src="https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Dell laptop on a table">
-            <img src="https://picsum.photos/200/300?grayscale" alt="grayscale walruses">
+            <img src="https://picsum.photos/200/300" alt="Dell laptop on a table">
+            <img src="https://picsum.photos/200/300?grayscale" class="anchor" alt="grayscale walruses">
             <img src="https://picsum.photos/id/237/400/300" alt="Black puppy lloking up">
             <img src="https://picsum.photos/id/238/200/300" alt="Black and white cityscape">
             <img src="https://picsum.photos/id/58/200/300" alt="grayscaled light house">
