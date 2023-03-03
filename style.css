@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat&display=swap');
+
+/* 
+font-family: 'Dosis', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
 
 *{
     font-size: 16px;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+body {
+    display: grid;
+    margin-inline: 0;
 }
 
 nav {
@@ -10,6 +28,9 @@ nav {
     top: 0;
     background-color: white;
     z-index: 1;
+
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -27,6 +48,8 @@ article .motto {
 nav ul {
     display: flex;
     flex-wrap: wrap;
+
+    padding-inline: 0;
 
 }
 
@@ -57,8 +80,62 @@ nav ul li {
     margin-inline: 0;
 }
 
-blockquote.featured {
+#testimonials blockquote.featured {
     order: -1;
+    background-color: black;
+    color: white;
+    margin-inline-end: 1rem;
+    font-weight: bold;
+    margin-inline-start: 1rem;
+}
+
+#portfolio {
+    background-color: #fca311;
+    padding-block: 2rem;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: (2, 1fr); */
+    /* grid-template: repeat(2, 1fr) / repeat(4, 1fr); */
+    grid-template-areas: "portfolio anchor img1 img2"
+                         "portfolio anchor img3 img4";
+    gap: 10px;
+    align-items: end;
+ }
+
+ #portfolio img {
+    max-inline-size: 250%;
+ }
+
+img.anchor {
+    grid-row: anchor;
+    align-self: self-start;
+}
+
+#portfolio img:hover{
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+.button {
+    background-color: #000000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(247, 77, 101, 0.9);
+    transition: background-color 0.5s;
+}
+
+
+#portfolio h2 {
+    grid-row: portfolio;
+    align-self: self-start;
 }
 
 #testimonials h2 {
@@ -69,14 +146,34 @@ blockquote.featured {
     flex-basis: 100%;
 }
 
+.flex-header,.motto,article footer {
+    flex-basis: 100%;
+}
+
+article aside {
+    text-align: center;
+}
+
+article footer {
+    text-align: center;
+}
+
 main{
-    width: clamp(700px, 95vw, 900px);
-    padding: 0 2rem;
-    border-inline-start: 2px solid black;
-    border-inline-end: 2px solid black;
-    /* margin: 0 auto; */
-    margin-block: 0;
-    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+}
+
+article footer a, article footer a:visited, article footer a:hover {
+    color: white;
+}
+
+main > * {
+    grid-column: 2;
+}
+
+.full-bleed {
+    grid-column: 1 / 4;
+    padding-inline: 2rem;
 }
 
 #resume-fieldset{
@@ -97,11 +194,18 @@ main{
     margin-bottom: 0.50rem;
 }
 
+.label-standard,.resumefieldset legend {
+    font-size: 0.075rem;
+}
+
 .my-picture {
     max-width: 100px;
     /* float: left; */
     margin-right: 20px;
 }
 
-
+.social-logo {
+    inline-size: 1rem;
+    
+}
 
